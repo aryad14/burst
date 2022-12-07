@@ -1,0 +1,463 @@
+/* Navbar */
+.sidebar-container {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    z-index: 1050;
+    background: white;
+}
+
+.sidebar-container aside {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Author', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a,
+i {
+    color: black !important;
+}
+
+.nav-item {
+    width: fit-content !important;
+}
+
+.nav-link {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #454545;
+    width: fit-content !important;
+    cursor: pointer;
+}
+
+.active::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: #000 !important;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width .35s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.sidebar-container>div>footer {
+    padding-left: 3.5rem;
+}
+
+/* Homepage Gallery */
+.gallery-container {
+    margin-left: 16rem;
+}
+
+
+/* Video Page */
+.video-container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-left: 16rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+/* Collection Page */
+.collection-container {
+    padding-left: 16rem;
+}
+
+.img-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 450px;
+    background-position: center center !important;
+    background-size: cover !important;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+}
+
+.img-card:hover {
+    filter: brightness(80%);
+}
+
+.img-head {
+    color: #5a5a5a;
+    font-weight: 500;
+    margin-top: 0.7rem !important;
+}
+
+/* About Page */
+.about-container {
+    margin-left: 20rem;
+}
+
+.about-head {
+    margin-top: 5rem;
+}
+
+.about-head-1 h1 {
+    color: #757575;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-head-2 p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+}
+
+.about-img {
+    margin-top: 2rem;
+}
+
+.about-img img {
+    width: 50% !important;
+}
+
+.about-body-head h1 {
+    color: #757575;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.about-body-main p {
+    color: #4f4f4f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+}
+
+
+.about-contact button {
+    border-radius: 0 !important;
+    background-color: #343434;
+    padding: 1.5rem 2rem !important;
+}
+
+.about-contact button:hover {
+    background-color: #5d5d5d;
+}
+
+
+/* Contact Page */
+.contact-container {
+    margin-left: 20rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-head h1 {
+    font-size: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #333333;
+    line-height: 1.3;
+    fill: #333333;
+}
+
+.contact-head p {
+    width: 45%;
+    color: #4f4f4f;
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+}
+
+.contact-body {
+    margin-left: 3rem;
+    margin-top: 8rem;
+}
+
+.contact-body-head {
+    width: 45% !important;
+}
+
+.contact-body-head h1 {
+    font-size: 45px;
+    color: #333333;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    fill: #333333;
+    letter-spacing: .01em;
+}
+
+.contact-body-head p {
+    width: 100%;
+    color: #4f4f4f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+    margin-top: 1rem;
+}
+
+.contact-form {
+    width: 65%;
+    padding: 0 6rem;
+}
+
+.contact-form input, textarea {
+    border-radius: 0 !important;
+    padding: 0.5rem 0.5rem;
+}
+
+.contact-form label {
+    font-family: 'Nunito', sans-serif;
+    color: #4f4f4f;
+    fill: #4f4f4f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    letter-spacing: 0em;
+}
+
+.contact-form button {
+    border-radius: 0 !important;
+    background-color: #343434;
+    padding: 1rem 2rem !important;
+}
+
+/* Exhibit Page */
+.carousel-item {
+    height: 100vh;
+    min-height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 50%;
+    opacity: 0 !important;
+}
+
+
+/* Footer */
+footer div i {
+    font-size: 14px;
+    color: #b6b6b6 !important;
+}
+
+footer div svg {
+    color: #b6b6b6 !important;
+}
+
+.copyright-text {
+    font-size: 11px;
+    color: #b6b6b6 !important;
+}
+
+
+@media (max-width: 992px) {
+    .contact-head p {
+        width: 95%;
+    }
+
+    .contact-body {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .contact-body-head {
+        width: 100% !important;
+    }
+
+    .contact-form {
+        width: 100% !important;
+        padding: 0 0;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%;
+        min-height: 0% !important;
+    }
+
+    .sidebar-container>div {
+        min-height: 0vh !important;
+    }
+
+    /* Homepage Gallery */
+    .gallery-container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 0;
+    }
+
+
+    /* Video Section */
+    .video-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
+
+    /* Collection Page */
+    .collection-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* About Page */
+    .about-container {
+        margin-left: 0;
+    }
+
+    .about-head-1 h1 {
+        color: #757575;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .about-head-2 {
+        width: 75% !important;
+    }
+
+    .about-head-2 p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+    }
+
+    .about-img img {
+        width: 75% !important;
+    }
+
+    /* Contact Page */
+    .contact-container {
+        margin-left: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem !important;
+    }
+
+    .contact-head h1 {
+        font-size: 35px;
+    }
+    
+    .contact-head p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .contact-body-head h1 {
+        font-size: 35px;
+    }
+
+    .contact-body-head p {
+        font-size: 14px;
+    }
+    
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+
+    .carousel-item {
+        height: 90vh;
+    }
+    
+}
+
+
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .nav-toggle-btn {
+        font-size: 19px !important;
+    }
+
+    .nav-toggle-btn button {
+        min-height: 2.3rem !important;
+    }
+
+    .navbar {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    /* Video Page */
+    .video-page-heading {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .video-page-heading h3 {
+        font-size: 26px;
+    }
+
+    .video-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+
+    /* Collection Page */
+    .img-head {
+        color: #5a5a5a;
+        font-weight: 500;
+        margin-top: 0.7rem !important;
+        font-size: 18px;
+    }
+
+    /* About Page */
+    .about-body-head h1 {
+        color: #757575;
+        font-weight: 400;
+        font-family: 'Nunito', sans-serif;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .about-body-main p {
+        color: #4f4f4f;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.8em;
+        letter-spacing: 0em;
+    }
+
+    .about-contact button {
+        padding: 1rem 1.5rem !important;
+    }
+}
